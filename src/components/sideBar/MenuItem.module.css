@@ -1,0 +1,24 @@
+.navItemDiv {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hovered {
+      background: white;
+  }
+  
+  
+  .navBarItem {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .hoveredText {
+      color: #c1272d;
+  }
