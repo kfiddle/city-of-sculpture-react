@@ -10,6 +10,11 @@ header {
     /* transform: translateY(-20vh); */
     transition: 1s cubic-bezier(0.4, 0, 0.58, 1);
     width: 100vw;
-    height: 15vh;
+    height: 22vh;
     z-index: 2;
+  }
+
+  header img {
+    width: 27%;
+    margin-bottom: 0.5rem;
   }
