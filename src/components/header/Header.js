@@ -1,8 +1,6 @@
 import { useState, useEffect, } from 'react';
 import styles from './Header.module.css';
 
-// import headerLogo from '../../assets/logo.png';
-
 const Header = (props) => {
     const [headerPosition, setHeaderPosition] = useState("translateY(-20vh)");
     const image = 'images/logo.png';
