@@ -1,9 +1,11 @@
 import { listOfSculptures } from "./ListOfSculptures";
+import SingleSculpture  from './SingleSculpture';
 import styles from "./Sculptures.module.css";
 
 const Sculptures = (props) => {
   const displayedSculptures = listOfSculptures.map((sculpture) => (
-    <p key={sculpture.id}>{sculpture.size}</p>
+    <SingleSculpture key={sculpture.id} source={sculpture.source} size={sculpture.size}></SingleSculpture>
+    
   ));
 
   return <div className={styles.sculptureDivPanel}>{displayedSculptures}</div>;
