@@ -3,7 +3,6 @@ const BIG = "big",
   V = "vertical",
   HUGE = "huge";
 
-
 export const listOfSculptures = [
   {
     id: "1",
@@ -40,11 +39,7 @@ export const listOfSculptures = [
     source: "SC-community3-551x413.jpeg",
     size: BIG,
   },
-  {
-    id: "8",
-    source: "SC-complexity_caNspctJREKqUHt7uI7O-305x413.jpeg",
-    size: V,
-  },
+
   {
     id: "9",
     source: "SC-complexity_caNspctJREKqUHt7uI7O-305x413.jpeg",
