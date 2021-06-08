@@ -32,3 +32,20 @@
   grid-column: span 2;
   grid-row: span 3;
 }
+
+.imageDetails {
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: black;
+  opacity: 0;
+  transition: 0.5s cubic-bezier(0.3, 0, 0.5, 1);
+}
+
+.imageDetails.open {
+  color: gold;
+  opacity: 1;
+  transform: translateY(-50px);
+}
