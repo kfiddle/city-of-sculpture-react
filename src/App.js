@@ -7,12 +7,15 @@ import Sculptures from './components/sculptures/Sculptures';
 
 function App() {
 
+  const choiceHandler = (choice) => {
+    console.log(choice);
+  }
 
 
   return (
     <Fragment>
       <Header />
-      <SideBar/>
+      <SideBar clickedChoice={choiceHandler}/>
       <Sculptures />
 
     </Fragment>

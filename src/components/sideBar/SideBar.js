@@ -43,8 +43,12 @@ const SideBar = (props) => {
     }, 150);
   }, []);
 
+  const clicked = (choice) => {
+    props.clickedChoice(choice);
+  };
+
   const displayOptions = menuItems.map((option) => (
-    <MenuItem key={option.id} title={option.title} />
+    <MenuItem key={option.id} title={option.title} clicked={clicked} />
   ));
 
   return (

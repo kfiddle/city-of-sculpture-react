@@ -5,21 +5,30 @@ import styles from "./MenuItem.module.css";
 const MenuItem = (props) => {
   const [hoveredOver, setHoveredOver] = useState(false);
 
-  const hoverOver = (event) => {
-    setHoveredOver(true);
+  const hoverHandler = (onOrOff) => {
+    onOrOff === "on" ? setHoveredOver(true) : setHoveredOver(false);
   };
 
-  const hoverOut = (event) => {
-    setHoveredOver(false);
+  const sendUpChoice = (choice) => {
+    props.clicked(props.title);
   };
 
   return (
     <div
       className={`${styles.navItemDiv} ${hoveredOver && styles.hovered}`}
-      onMouseEnter={hoverOver}
-      onMouseLeave={hoverOut}
+      onMouseEnter={() => {
+        hoverHandler("on");
+      }}
+      onMouseLeave={() => {
+        hoverHandler("off");
+      }}
+      onClick={sendUpChoice}
     >
-      <p className={`${styles.navBarItem} ${hoveredOver && styles.hoveredText} `}>{props.title} </p>
+      <p
+        className={`${styles.navBarItem} ${hoveredOver && styles.hoveredText} `}
+      >
+        {props.title}{" "}
+      </p>
     </div>
   );
 };
