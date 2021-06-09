@@ -14,6 +14,7 @@ function App() {
   const [chosenOption, setChosenOption] = useState(SCULPTURES);
 
   const mainChoiceHandler = (choice) => {
+    console.log(choice)
     setChosenOption(choice);
   };
 

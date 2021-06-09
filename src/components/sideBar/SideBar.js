@@ -44,11 +44,10 @@ const menuItems = [ABOUT_US, SCULPTURES, ARTISTS, GETTING_AROUND, BIKE_RACKS, HA
 
 const SideBar = (props) => {
   const [sideBarPosition, setSideBarPosition] = useState("translateX(-30vw)");
-  const [currentChoice, setCurrentChoice] = useState(SCULPTURES);
+  const [currentChoice, setCurrentChoice] = useState('');
   const [sideBarLocked, setSideBarLock] = useState(false);
 
   
-
 
 
   useEffect(() => {
@@ -57,8 +56,10 @@ const SideBar = (props) => {
     }, 150);
   }, []);
 
-  const clicked = (choice) => {
+  const choiceHandler = (choice) => {
     props.clickedChoice(choice);
+    setSideBarLock(true);
+    setCurrentChoice(choice)
   };
 
   const lock = () => {
@@ -66,7 +67,7 @@ const SideBar = (props) => {
   }
 
   const displayOptions = menuItems.map((option) => (
-    <MenuItem key={option.id} title={option.title} clicked={clicked} locked={sideBarLocked} lock={lock} />
+    <MenuItem key={option.id} title={option.title} clicked={choiceHandler} locked={sideBarLocked} chosen={currentChoice}/>
   ));
 
   return (
