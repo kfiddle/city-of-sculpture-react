@@ -1,23 +1,28 @@
-import './App.css';
-import { Fragment, useState } from 'react';
+import "./App.css";
+import { Fragment, useState } from "react";
 
-import Header from './components/header/Header';
-import SideBar from './components/sideBar/SideBar';
-import Sculptures from './components/sculptures/Sculptures';
+import Header from "./components/header/Header";
+import SideBar from "./components/sideBar/SideBar";
+import AboutUs from "./components/aboutUs/AboutUs";
+import Sculptures from "./components/sculptures/Sculptures";
+
+const SCULPTURES = "Sculptures";
+const ABOUT_US = "About Us";
+const ARTISTS = "Artists";
 
 function App() {
+  const [chosenOption, setChosenOption] = useState(SCULPTURES);
 
-  const choiceHandler = (choice) => {
-    console.log(choice);
-  }
-
+  const mainChoiceHandler = (choice) => {
+    setChosenOption(choice);
+  };
 
   return (
     <Fragment>
       <Header />
-      <SideBar clickedChoice={choiceHandler}/>
+      <SideBar clickedChoice={mainChoiceHandler} />
+      {chosenOption === ABOUT_US && <AboutUs />}
       <Sculptures />
-
     </Fragment>
   );
 }

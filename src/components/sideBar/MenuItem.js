@@ -3,19 +3,24 @@ import { useState } from "react";
 import styles from "./MenuItem.module.css";
 
 const MenuItem = (props) => {
-  const [hoveredOver, setHoveredOver] = useState(false);
+  const [highlighted, setHighlighted] = useState(false);
 
   const hoverHandler = (onOrOff) => {
-    onOrOff === "on" ? setHoveredOver(true) : setHoveredOver(false);
+    if (!props.locked) {
+      onOrOff === "on" ? setHighlighted(true) : setHighlighted(false);
+    }
   };
 
-  const sendUpChoice = (choice) => {
+  const sendUpChoice = () => {
     props.clicked(props.title);
+    props.lock();
+    setHighlighted(true)
+
   };
 
   return (
     <div
-      className={`${styles.navItemDiv} ${hoveredOver && styles.hovered}`}
+      className={`${styles.navItemDiv} ${highlighted && styles.hovered}`}
       onMouseEnter={() => {
         hoverHandler("on");
       }}
@@ -25,7 +30,7 @@ const MenuItem = (props) => {
       onClick={sendUpChoice}
     >
       <p
-        className={`${styles.navBarItem} ${hoveredOver && styles.hoveredText} `}
+        className={`${styles.navBarItem} ${highlighted && styles.hoveredText} `}
       >
         {props.title}{" "}
       </p>
