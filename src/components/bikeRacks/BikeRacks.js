@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 
 import TileGallery from "../tileGallery/TileGallery";
 import PennyFarthing from "./PennyFarthing";
@@ -9,9 +9,17 @@ import styles from "./BikeRacks.module.css";
 const BikeRacks = (props) => {
   const [bikeRiding, setBikeRiding] = useState(true);
 
-  setTimeout(() => {
-    setBikeRiding(false);
-  }, 30000);
+  const [bikesDivPosition, setBikesDivPosition] = useState("translateX(-100vw)");
+
+  useEffect(() => {
+    const slideTimer = setTimeout(() => {
+      setBikesDivPosition("translateX(10vw)");
+    }, 500);
+
+    // setTimeout(() => {
+    //   setBikeRiding(false);
+    // }, 30000);
+  }, []);
 
   const BIG = "big",
     H = "horizontal",
@@ -46,15 +54,15 @@ const BikeRacks = (props) => {
       ></SingleSculpture>
     );
   }
-  console.log(displayedBikeRacks)
+  console.log(displayedBikeRacks);
 
   return (
-    <Fragment>
+    <div className={styles.bikeAndTiles} style={{transform : bikesDivPosition}}>
       <TileGallery className={"bikeGalleryDiv"}>
         {displayedBikeRacks}
       </TileGallery>
       {bikeRiding && <PennyFarthing />}
-    </Fragment>
+    </div>
   );
 };
 

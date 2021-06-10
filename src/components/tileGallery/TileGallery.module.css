@@ -16,7 +16,7 @@
 
 
   .bikeGalleryDiv {
-    position: absolute;
+    /* position: absolute; */
     top: 23vh;
     width: 75vw;
     padding-bottom: 30%;
@@ -28,6 +28,5 @@
     grid-auto-rows: 15vh;
     grid-auto-flow: dense;
     background: whitesmoke;
-    /* transform: translateX(-80vw); */
-    transition: 1s;
+    transition: 23s linear;
   }

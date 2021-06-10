@@ -10,7 +10,7 @@ const GettingAround = (props) => {
     setTimeout(() => {
         setVisible(true);
 
-    }, 800)
+    }, 100)
 
 
   }, []);
