@@ -20,11 +20,12 @@ const Sculptures = (props) => {
       key={sculpture.id}
       source={sculpture.source}
       size={sculpture.size}
+      type={'sculpture'}
     ></SingleSculpture>
   ));
 
   return (
-    <TileGallery className={'sculptureGalleryDiv'}position={sculpturesPosition}>
+    <TileGallery className={'sculptureGalleryDiv'} position={sculpturesPosition}>
       {displayedSculptures}
     </TileGallery>
   );

@@ -1,22 +1,61 @@
-import { Fragment, useState } from 'react';
-import TileGallery from '../tileGallery/TileGallery';
+import { Fragment, useState } from "react";
 
-import styles from './BikeRacks.module.css';
-import PennyFarthing from './PennyFarthing';
+import TileGallery from "../tileGallery/TileGallery";
+import PennyFarthing from "./PennyFarthing";
+import SingleSculpture from "../sculptures/SingleSculpture";
 
-const BikeRacks = props => {
-    const [bikeRiding, setBikeRiding] = useState(true);
+import styles from "./BikeRacks.module.css";
 
-    setTimeout(()=> { setBikeRiding(false)}, 30000);
+const BikeRacks = (props) => {
+  const [bikeRiding, setBikeRiding] = useState(true);
 
-    return (
-        <Fragment>
-            <TileGallery className={'bikeGalleryDiv'}/>
-            {bikeRiding && <PennyFarthing />}
-        </Fragment>
-    ) 
+  setTimeout(() => {
+    setBikeRiding(false);
+  }, 30000);
 
+  const BIG = "big",
+    H = "horizontal",
+    V = "vertical",
+    HUGE = "huge";
 
+  const listOfBikeRacks = {
+    barclays: H,
+    butlerTech: V,
+    communityFirst: BIG,
+    developmentDisabilities: H,
+    fortHamHospital: V,
+    hamClass: BIG,
+    hamClass25: BIG,
+    hamClass25Owl: BIG,
+    hamiltonParksConservancy: HUGE,
+    hamOrthopaedics: BIG,
+    miamiURegionals: H,
+    pikeFamily: V,
+    primaryHealth: H,
+    thyssenkruppBilsten: V,
+  };
+
+  const displayedBikeRacks = [];
+
+  for (let bikeRack in listOfBikeRacks) {
+    displayedBikeRacks.push(
+      <SingleSculpture
+        key={Math.random()}
+        source={bikeRack + ".jpeg"}
+        size={listOfBikeRacks[bikeRack]}
+      ></SingleSculpture>
+    );
+  }
+  console.log(displayedBikeRacks)
+
+  return (
+    <Fragment>
+      <TileGallery className={"bikeGalleryDiv"}>
+        {displayedBikeRacks}
+      </TileGallery>
+      {bikeRiding && <PennyFarthing />}
+    </Fragment>
+  );
 };
 
 export default BikeRacks;

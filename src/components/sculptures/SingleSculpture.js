@@ -5,9 +5,13 @@ import styles from "./Sculpture.module.css";
 const SingleSculpture = (props) => {
   const [imageHoverState, setImageHoverState] = useState(false);
 
-  const { source, size } = props;
+  const { source, size, type } = props;
 
-  const imageSrc = "images/sculptures/" + source;
+  let imageSrc;
+
+  type === 'sculpture' ?
+  imageSrc = "images/sculptures/" + source :
+  imageSrc = 'images/bikeRacks/' + source;
 
   const hoverHandlers = (onOrOff) => {
     onOrOff === "on" ? setImageHoverState(true) : setImageHoverState(false);

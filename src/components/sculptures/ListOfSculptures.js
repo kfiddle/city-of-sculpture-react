@@ -241,3 +241,5 @@ export const listOfSculptures = [
     size: V,
   },
 ];
+
+
