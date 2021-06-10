@@ -1,0 +1,52 @@
+.bigWheel {
+  position: relative;
+  left: 57%;
+  /* margin-left: 5rem; */
+  /* bottom: 5vh; */
+  /* margin-left: 5rem; */
+  /* position: absolute; */
+  /* transition: 13s; */
+  animation: spin infinite 5s linear;
+}
+
+.bikeDiv {
+  position: absolute;
+  /* left: 20vw;
+  top: 50vh; */
+  bottom: 10vh;
+  /* background-color: purple; */
+  z-index: 4;
+  transition: 22s linear;
+}
+
+.pennyFrame {
+  position: relative;
+  transform: translate(-4.5vw,-7vh) 
+
+  /* bottom: 11vh; */
+  /* left: -12vw; */
+  /* margin-bottom: 0.75rem; */
+  /* transition: 13s; */
+}
+
+.smallWheel {
+  position: relative;
+  right:40%;
+  top: -1rem;
+  /* transform: translate(-50vw, -2vh); */
+   
+  
+  /* margin-bottom: 1rem; */
+  /* position: absolute; */
+  /* transition: 13s; */
+  animation: spin infinite 2s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
