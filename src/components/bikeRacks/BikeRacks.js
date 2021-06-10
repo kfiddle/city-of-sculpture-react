@@ -1,4 +1,5 @@
 import { Fragment, useState } from 'react';
+import TileGallery from '../tileGallery/TileGallery';
 
 import styles from './BikeRacks.module.css';
 import PennyFarthing from './PennyFarthing';
@@ -10,6 +11,7 @@ const BikeRacks = props => {
 
     return (
         <Fragment>
+            <TileGallery className={'bikeGalleryDiv'}/>
             {bikeRiding && <PennyFarthing />}
         </Fragment>
     ) 

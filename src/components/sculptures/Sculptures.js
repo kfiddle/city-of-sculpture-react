@@ -1,10 +1,13 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { listOfSculptures } from "./ListOfSculptures";
-import SingleSculpture  from './SingleSculpture';
+
+import TileGallery from "../tileGallery/TileGallery";
+import SingleSculpture from "./SingleSculpture";
 import styles from "./Sculptures.module.css";
 
 const Sculptures = (props) => {
-  const [sculpturesPosition, setSculpturesPosition] = useState("translateX(100vw)")
+  const [sculpturesPosition, setSculpturesPosition] =
+    useState("translateX(100vw)");
 
   useEffect(() => {
     const slideTimer = setTimeout(() => {
@@ -13,11 +16,18 @@ const Sculptures = (props) => {
   }, []);
 
   const displayedSculptures = listOfSculptures.map((sculpture) => (
-    <SingleSculpture key={sculpture.id} source={sculpture.source} size={sculpture.size}></SingleSculpture>
-    
+    <SingleSculpture
+      key={sculpture.id}
+      source={sculpture.source}
+      size={sculpture.size}
+    ></SingleSculpture>
   ));
 
-  return <div className={styles.sculptureDivPanel} style={{transform: sculpturesPosition}}>{displayedSculptures}</div>;
+  return (
+    <TileGallery className={'sculptureGalleryDiv'}position={sculpturesPosition}>
+      {displayedSculptures}
+    </TileGallery>
+  );
 };
 
 export default Sculptures;

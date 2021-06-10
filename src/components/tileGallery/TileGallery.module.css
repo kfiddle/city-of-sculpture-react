@@ -1,0 +1,33 @@
+.sculptureGalleryDiv {
+    position: relative;
+    top: 23vh;
+    width: 250vw;
+    padding-bottom: 80%;
+    cursor: pointer;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(15vh, 1fr));
+    grid-auto-rows: 15vh;
+    grid-auto-flow: dense;
+    background: white;
+    overflow: hidden;
+    transition: 1.35s cubic-bezier(0.3, 0, 0.5, 1);
+  }
+
+
+  .bikeGalleryDiv {
+    position: absolute;
+    top: 23vh;
+    width: 75vw;
+    padding-bottom: 30%;
+    border-top: 2px solid black;
+    border-right: 1rem solid black;
+    display: none;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(15vh, 1fr));
+    grid-auto-rows: 15vh;
+    grid-auto-flow: dense;
+    background: whitesmoke;
+    transform: translateX(-80vw);
+    transition: 1s;
+  }
