@@ -5,33 +5,34 @@ import Header from "./components/header/Header";
 import SideBar from "./components/sideBar/SideBar";
 import AboutUs from "./components/aboutUs/AboutUs";
 import Sculptures from "./components/sculptures/Sculptures";
-import BikeRacks from './components/bikeRacks/BikeRacks';
-import GettingAround from './components/gettingAround/GettingAround';
+import BikeRacks from "./components/bikeRacks/BikeRacks";
+import GettingAround from "./components/gettingAround/GettingAround";
 
-const SCULPTURES = "The Sculptures";
-const ABOUT_US = "About Us";
-const ARTISTS = "Artists";
-const BIKE_RACKS = 'Sculptural Bike Racks';
-const GETTING_AROUND = 'Getting Around';
+
+
 
 function App() {
-  const [chosenOption, setChosenOption] = useState(SCULPTURES);
+  const [chosenOption, setChosenOption] = useState("The Sculptures");
 
-  const MAPPING = chosenOption === 'Getting Around';
+  const SCULPTURES = chosenOption === "The Sculptures";
+  const ARTISTS = chosenOption === "Artists";
+  const BIKE_RACKS = chosenOption === "Sculptural Bike Racks";
+  const GETTING_AROUND = chosenOption === "Getting Around";
+  const ABOUT_US = chosenOption === "About Us";
 
   const mainChoiceHandler = (choice) => {
-    console.log(choice)
+    console.log(choice);
     setChosenOption(choice);
   };
 
   return (
     <Fragment>
       <Header />
-      <SideBar clickedChoice={mainChoiceHandler}  mapOpen={MAPPING}  />
-      {chosenOption === SCULPTURES && <Sculptures />}
-      {chosenOption === ABOUT_US && <AboutUs />}
-      {chosenOption === BIKE_RACKS && <BikeRacks />}
-      {chosenOption === GETTING_AROUND && <GettingAround/>}
+      <SideBar clickedChoice={mainChoiceHandler} mapOpen={GETTING_AROUND} bikeRacksOpen={BIKE_RACKS} />
+      {chosenOption === 'The Sculptures' && <Sculptures />}
+      {ABOUT_US && <AboutUs />}
+      {BIKE_RACKS && <BikeRacks />}
+      {GETTING_AROUND && <GettingAround />}
     </Fragment>
   );
 }

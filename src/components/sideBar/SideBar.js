@@ -50,11 +50,13 @@ const SideBar = (props) => {
     const slideTimer = setTimeout(() => {
       if (props.mapOpen) {
         setSideBarPosition("translateX(0vw)");
+      } else if (props.bikeRacksOpen) {
+        setSideBarPosition("translateX(5vw)");
       } else {
         setSideBarPosition("translateX(15vw)");
       }
     }, 100);
-  }, [props.mapOpen]);
+  }, [props.mapOpen, props.bikeRacksOpen]);
 
   const choiceHandler = (choice) => {
     props.clickedChoice(choice);

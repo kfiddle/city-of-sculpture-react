@@ -13,12 +13,12 @@ const BikeRacks = (props) => {
 
   useEffect(() => {
     const slideTimer = setTimeout(() => {
-      setBikesDivPosition("translateX(10vw)");
+      setBikesDivPosition("translateX(23vw)");
     }, 500);
 
-    // setTimeout(() => {
-    //   setBikeRiding(false);
-    // }, 30000);
+    setTimeout(() => {
+      setBikeRiding(false);
+    }, 30000);
   }, []);
 
   const BIG = "big",
