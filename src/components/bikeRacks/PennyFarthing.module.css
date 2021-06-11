@@ -2,7 +2,7 @@
   position: absolute;
   bottom: 55%;
   right: -28%;
-  animation: spin infinite 5s linear;
+  animation: spin infinite 4s linear;
 }
 
 .bikeDiv {
@@ -18,7 +18,7 @@
   position: absolute;
   bottom: 56%;
   right: 29%;
-  animation: spin infinite 2s linear;
+  animation: spin infinite 1.6s linear;
 }
 
 @keyframes spin {
