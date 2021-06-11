@@ -29,7 +29,7 @@ function App() {
     <Fragment>
       <Header />
       <SideBar clickedChoice={mainChoiceHandler} mapOpen={GETTING_AROUND} bikeRacksOpen={BIKE_RACKS} />
-      {chosenOption === 'The Sculptures' && <Sculptures />}
+      {(chosenOption === 'The Sculptures' || ABOUT_US) && <Sculptures />}
       {ABOUT_US && <AboutUs />}
       {BIKE_RACKS && <BikeRacks />}
       {GETTING_AROUND && <GettingAround />}
