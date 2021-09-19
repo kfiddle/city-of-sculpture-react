@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import map from "../../assets/mapWithMarkers.png";
+import map from "../../assets/BridgeMain.jpg";
 import styles from "./GettingAround.module.css";
 
 const GettingAround = (props) => {
