@@ -1,6 +1,7 @@
-const 
+const BIG = "big",
   H = "horizontal",
-  V = "vertical";
+  V = "vertical",
+  HUGE = "huge";
 
 export const listOfSculptures = [
   {
@@ -285,4 +286,4 @@ export const listOfSculptures = [
     size: V,
   },
 
-]
+];
