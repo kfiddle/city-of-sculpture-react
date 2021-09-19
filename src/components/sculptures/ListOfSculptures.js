@@ -7,27 +7,27 @@ export const listOfSculptures = [
   {
     id: "1",
     source: "cos1.jpeg",
-    size: H,
+    size: HUGE,
   },
   {
     id: "2",
     source: "cos2.jpeg",
-    size: H,
+    size: V,
   },
   {
     id: "3",
     source: "cos3.jpeg",
-    size:   H,
-  },
+    size: HUGE,
+    },
   {
     id: "4",
     source: "cos4.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "5",
     source: "cos5.jpeg",
-    size: V,
+    size: HUGE,
   },
   {
     id: "6",
@@ -37,12 +37,12 @@ export const listOfSculptures = [
   {
     id: "7",
     source: "cos7.jpeg",
-    size: V,
+    size: BIG,
   },
   {
     id: "8",
     source: "cos8.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "9",
@@ -52,7 +52,7 @@ export const listOfSculptures = [
   {
     id: "10",
     source: "cos10.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "11",
@@ -72,7 +72,7 @@ export const listOfSculptures = [
   {
     id: "14",
     source: "cos14.jpeg",
-    size: H,
+    size: BIG,
   },
   {
     id: "15",
@@ -92,7 +92,7 @@ export const listOfSculptures = [
   {
     id: "18",
     source: "cos18.jpeg",
-    size: V,
+    size: BIG,
   },
   {
     id: "19",
@@ -102,7 +102,7 @@ export const listOfSculptures = [
   {
     id: "20",
     source: "cos20.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "21",
@@ -122,22 +122,22 @@ export const listOfSculptures = [
   {
     id: "24",
     source: "cos24.jpeg",
-    size: H,
+    size: BIG,
   },
   {
     id: "25",
     source: "cos25.jpeg",
-    size: V,
+    size: BIG,
   },
   {
     id: "26",
     source: "cos25.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "27",
     source: "cos27.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "28",
@@ -147,7 +147,7 @@ export const listOfSculptures = [
   {
     id: "29",
     source: "cos29.jpeg",
-    size: H,
+    size: BIG,
   },
   {
     id: "30",
@@ -157,17 +157,17 @@ export const listOfSculptures = [
   {
     id: "31",
     source: "cos31.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "32",
     source: "cos32.jpeg",
-    size: H,
+    size: BIG,
   },
   {
     id: "33",
     source: "cos33.jpeg",
-    size: H,
+    size: BIG,
   },
   {
     id: "34",
@@ -177,22 +177,22 @@ export const listOfSculptures = [
   {
     id: "35",
     source: "cos35.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "36",
     source: "cos36.jpeg",
-    size: H,
+    size: BIG,
   },
   {
     id: "37",
     source: "cos37.jpeg",
-    size: H,
+    size: HUGE,
   },
   {
     id: "38",
     source: "cos38.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "39",
@@ -207,7 +207,7 @@ export const listOfSculptures = [
   {
     id: "41",
     source: "cos41.jpeg",
-    size: H,
+    size: BIG,
   },
   {
     id: "42",
@@ -222,12 +222,12 @@ export const listOfSculptures = [
   {
     id: "44",
     source: "heliosGuardians.jpg",
-    size: V,
+    size: BIG,
   },
   {
     id: "45",
     source: "holeInTheEarth.jpeg",
-    size: H,
+    size: V,
   },
   {
     id: "46",
@@ -242,22 +242,22 @@ export const listOfSculptures = [
   {
     id: "48",
     source: "noChildLeftBehind.jpeg",
-    size: H,
+    size: V,
   },
   {
     id: "49",
     source: "passages.jpeg",
-    size: H,
+    size: HUGE,
   },
   {
     id: "52",
     source: "peaceOfficerMemorial.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "53",
     source: "someday.jpeg",
-    size: V,
+    size: H,
   },
   {
     id: "54",
@@ -267,12 +267,12 @@ export const listOfSculptures = [
   {
     id: "55",
     source: "theHappyFamily.jpeg",
-    size: V,
+    size: BIG,
   },
   {
     id: "56",
     source: "torrent.jpeg",
-    size: V,
+    size: BIG,
   },
 
   {
