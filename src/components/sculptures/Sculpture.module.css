@@ -15,7 +15,7 @@
   filter: brightness(80%) hue-rotate(180deg) saturate(30%) invert(20%);
 }
 
-.horizontal {
+/* .horizontal {
   grid-column: span 3;
 }
 
@@ -31,7 +31,7 @@
 .huge {
   grid-column: span 2;
   grid-row: span 3;
-}
+} */
 
 .imageDetails {
   position: absolute;

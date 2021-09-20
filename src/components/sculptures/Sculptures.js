@@ -28,12 +28,16 @@ const Sculptures = (props) => {
   ));
 
   return (
+
+    <div className={styles.tileGalleryContainer}>
+
     <TileGallery
       className={"sculptureGalleryDiv"}
       position={sculpturesPosition}
     >
       {displayedSculptures}
     </TileGallery>
+    </div>
   );
 };
 

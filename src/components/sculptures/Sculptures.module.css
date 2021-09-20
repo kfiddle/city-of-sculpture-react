@@ -1,3 +1,8 @@
+
+.tileGalleryContainer{
+  max-height: 50vh;
+}
+
 .sculptureDivPanel {
     position: relative;
     top: 23vh;

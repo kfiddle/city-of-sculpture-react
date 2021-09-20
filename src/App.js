@@ -32,16 +32,17 @@ function App() {
     <Fragment>
       <Header />
 
-      <div className={styles.pageContainer}>
+      {/* <div className={styles.pageContainer}>
 
-      <div className={styles.contentWrapper}>
+      <div className={styles.contentWrapper}> */}
 
-      <SideBar
+      <SideBar>
         clickedChoice={mainChoiceHandler}
         mapOpen={GETTING_AROUND}
         bikeRacksOpen={BIKE_RACKS}
-      />
-      {(chosenOption === "The Sculptures" || ABOUT_US) && <Sculptures />}
+        </SideBar>      
+        
+        {(chosenOption === "The Sculptures" || ABOUT_US) && <Sculptures />}
       {ABOUT_US && <AboutUs />}
       {BIKE_RACKS && <BikeRacks />}
       {GETTING_AROUND && <GettingAround />}
@@ -49,11 +50,11 @@ function App() {
       {ARTISTS && <Artists />}
       {HAMILTON && <Hamilton />}
 
-      </div>
+      {/* </div> */}
 
-      <Footer />
+      {/* <Footer /> */}
 
-      </div>
+      {/* </div> */}
 
     </Fragment>
   );
