@@ -10,7 +10,7 @@ import BikeRacks from "./components/bikeRacks/BikeRacks";
 import GettingAround from "./components/gettingAround/GettingAround";
 import Contact from "./components/contact/Contact";
 import Hamilton from "./components/hamilton/Hamilton";
-
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [chosenOption, setChosenOption] = useState("The Sculptures");
@@ -31,14 +31,20 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <SideBar clickedChoice={mainChoiceHandler} mapOpen={GETTING_AROUND} bikeRacksOpen={BIKE_RACKS} />
-      {(chosenOption === 'The Sculptures' || ABOUT_US) && <Sculptures />}
+
+      <SideBar
+        clickedChoice={mainChoiceHandler}
+        mapOpen={GETTING_AROUND}
+        bikeRacksOpen={BIKE_RACKS}
+      />
+      {(chosenOption === "The Sculptures" || ABOUT_US) && <Sculptures />}
       {ABOUT_US && <AboutUs />}
       {BIKE_RACKS && <BikeRacks />}
       {GETTING_AROUND && <GettingAround />}
       {CONTACT_US && <Contact />}
       {ARTISTS && <Artists />}
       {HAMILTON && <Hamilton />}
+      {/* <Footer /> */}
 
     </Fragment>
   );

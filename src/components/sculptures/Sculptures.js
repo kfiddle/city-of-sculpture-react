@@ -22,6 +22,7 @@ const Sculptures = (props) => {
       key={sculpture.id}
       source={sculpture.source}
       size={sculpture.size}
+      title={sculpture.title}
       type={"sculpture"}
     ></SingleSculpture>
   ));

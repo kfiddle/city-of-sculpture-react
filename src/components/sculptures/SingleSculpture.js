@@ -1,24 +1,37 @@
 import { useState } from "react";
 
+import Modal from "../modal/Modal";
+
 import styles from "./Sculpture.module.css";
 
 const SingleSculpture = (props) => {
   const [imageHoverState, setImageHoverState] = useState(false);
+  const [sculptureClicked, setSculptureClicked] = useState(false);
 
-  const { source, size, type } = props;
+  const { title, source, size, type } = props;
 
   let imageSrc;
 
-  type === 'sculpture' ?
-  imageSrc = "images/sculptures/" + source :
-  imageSrc = 'images/bikeRacks/' + source;
+  type === "sculpture"
+    ? (imageSrc = "images/sculptures/" + source)
+    : (imageSrc = "images/bikeRacks/" + source);
 
   const hoverHandlers = (onOrOff) => {
     onOrOff === "on" ? setImageHoverState(true) : setImageHoverState(false);
   };
 
+  const showModal = () => {
+    setSculptureClicked(true);
+  };
+
+  const closeModal = () => {
+    console.log('clicked')
+    setSculptureClicked(false);
+  };
+
   return (
     <div
+      onClick={showModal}
       className={`${styles.tileDiv} ${styles[size]}`}
       onMouseEnter={() => {
         hoverHandlers("on");
@@ -34,7 +47,16 @@ const SingleSculpture = (props) => {
         }`}
       />
 
-      <p className={`${styles.imageDetails} ${imageHoverState ? styles.open : ''}`}>one nifty statue</p>
+      <p
+        className={`${styles.imageDetails} ${
+          imageHoverState ? styles.open : ""
+        }`}
+      >
+        {title}
+      </p>
+      {sculptureClicked && (
+        <Modal closeModal={closeModal}>Hi I'm a modal</Modal>
+      )}
     </div>
   );
 };

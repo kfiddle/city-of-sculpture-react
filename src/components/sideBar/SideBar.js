@@ -42,21 +42,8 @@ const menuItems = [
 ];
 
 const SideBar = (props) => {
-  const [sideBarPosition, setSideBarPosition] = useState("translateX(-30vw)");
   const [currentChoice, setCurrentChoice] = useState("");
   const [sideBarLocked, setSideBarLock] = useState(false);
-
-  useEffect(() => {
-    const slideTimer = setTimeout(() => {
-      if (props.mapOpen) {
-        setSideBarPosition("translateX(0vw)");
-      } else if (props.bikeRacksOpen) {
-        setSideBarPosition("translateX(5vw)");
-      } else {
-        setSideBarPosition("translateX(15vw)");
-      }
-    }, 100);
-  }, [props.mapOpen, props.bikeRacksOpen]);
 
   const choiceHandler = (choice) => {
     props.clickedChoice(choice);
@@ -79,7 +66,7 @@ const SideBar = (props) => {
   ));
 
   return (
-    <div className={styles.sideBar} style={{ transform: sideBarPosition }}>
+    <div className={styles.sideBar}>
       <div className={styles.menuContainer}>{displayOptions}</div>;
     </div>
   );
