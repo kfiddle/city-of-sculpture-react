@@ -16,7 +16,7 @@ const Header = (props) => {
 
   return (
     <header className={styles.header} style={{ transform: headerPosition }}>
-      <NavStripes />
+      {/* <NavStripes /> */}
       <img src={image}></img>
     </header>
   );

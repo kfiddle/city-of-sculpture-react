@@ -1,4 +1,4 @@
-import "./App.css";
+import styles from "./App.css";
 import { Fragment, useState } from "react";
 
 import Header from "./components/header/Header";
@@ -32,6 +32,10 @@ function App() {
     <Fragment>
       <Header />
 
+      <div className={styles.pageContainer}>
+
+      <div className={styles.contentWrapper}>
+
       <SideBar
         clickedChoice={mainChoiceHandler}
         mapOpen={GETTING_AROUND}
@@ -44,7 +48,12 @@ function App() {
       {CONTACT_US && <Contact />}
       {ARTISTS && <Artists />}
       {HAMILTON && <Hamilton />}
-      {/* <Footer /> */}
+
+      </div>
+
+      <Footer />
+
+      </div>
 
     </Fragment>
   );
