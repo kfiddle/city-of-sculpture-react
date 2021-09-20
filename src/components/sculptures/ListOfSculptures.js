@@ -6,46 +6,63 @@ const BIG = "big",
 export const listOfSculptures = [
   {
     id: "1",
+    title:  "Some title",
     source: "cos1.jpg",
     size: HUGE,
   },
   {
     id: "2",
+    title:  "Some title",
+
     source: "cos2.jpg",
     size: V,
   },
   {
     id: "3",
+    title:  "Some title",
+
     source: "cos3.jpg",
     size: HUGE,
     },
   {
     id: "4",
+    title:  "Some title",
+
     source: "cos4.jpg",
     size: H,
   },
   {
     id: "5",
+    title:  "Some title",
+
     source: "cos5.jpg",
     size: HUGE,
   },
   {
     id: "6",
+    title:  "Some title",
+
     source: "cos6.jpg",
     size: V,
   },
   {
     id: "7",
+    title:  "Some title",
+
     source: "cos7.jpg",
     size: BIG,
   },
   {
     id: "8",
+    title:  "Some title",
+
     source: "cos8.jpg",
     size: H,
   },
   {
     id: "9",
+    title:  "Some title",
+
     source: "cos9.jpg",
     size: V,
   },

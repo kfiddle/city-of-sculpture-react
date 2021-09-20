@@ -1,6 +1,7 @@
 .map {
     position: absolute;
     top: 22vh;
+    margin-left: 25rem;
     transform: scale(1, .4);
     transition: 1s;
     filter: opacity(0) hue-rotate(180deg) saturate(30%) invert(20%);
