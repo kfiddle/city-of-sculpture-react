@@ -1,6 +1,6 @@
 
 .tileGalleryContainer{
-  max-height: 50vh;
+  /* max-height: 50vh; */
 }
 
 /* .sculptureDivPanel {
@@ -20,7 +20,7 @@
     transition: 1.35s cubic-bezier(0.3, 0, 0.5, 1);
   } */
   
-  .windowFrame {
+  /* .windowFrame {
     position: relative;
     margin: 0 16rem 0 1rem;
     padding-top: 0;
@@ -28,7 +28,7 @@
     width: 93vw;
     overflow: hidden;
     transition: 1s;
-  }
+  } */
   
   /* .bikeDivPanel {
     position: absolute;
@@ -47,7 +47,7 @@
     transition: 1s;
   } */
   
-  
+/*   
   .arrow {
     position: absolute;
     width: 10rem;
@@ -65,4 +65,4 @@
     right: -4.2rem;
     top: 50%;
   }
-  
+   */
