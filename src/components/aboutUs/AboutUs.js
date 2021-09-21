@@ -1,5 +1,7 @@
 
 import SlidingBox from "../slidingBox/SlidingBox";
+import { accordion } from "./Accordion";
+
 import styles from "./AboutUs.module.css";
 
 const AboutUs = (props) => {
@@ -8,7 +10,7 @@ const AboutUs = (props) => {
 
   return (
     <SlidingBox>
-      <div className={styles.aboutUsStatementDiv}>
+      <div className={styles.statementDiv}>
      <p>On August 16, 2000, Ohio’s then governor, Bob Taft, declared and formally recognized 
       Hamilton as “The City of Sculpture.” This sparked a vision from a group of community 
       members who officially formed “Hamilton, Ohio, City of Sculpture” in September of 2000. 
@@ -32,13 +34,47 @@ cultural and economic past. Today, three compact historic districts, plus scenic
 Hamilton, showcase a variety of homes and buildings.</p> 
 </div>
 
-      <button className={styles.missionAndBoard}>
+<div className={styles.accordion}>
         <p className={styles.missionAndBoardText}>Our Mission</p>
-      </button>
+      </div>
 
-      <button className={styles.missionAndBoard}>
+      <div className={styles.accordionContent}>
+            <p>Jason Elvers,Vorys, Sater, Seymour & Pease, LLP, Columbus, Ohio </p>
+            <p>  Julie Carpenter,Cardinal Heatlh, Dublin, Ohio </p>
+            <p>  Kayleigh Hunnicutt,Dublin City Schools, School Psychologist </p>
+            <p>  Lisa Chapman,Elevated Marketing Services, Columbus, Ohio </p>
+            <p>  Cody Yarletts,Parker Hannifin,Columbus, Ohio </p>
+            <p>  Ryan J. Vonderbrink,Seegrid, New Albany, Ohio </p>
+            <p>  Joshua Yakunich, Ohio State University Wexner Medical Center, Columbus, Ohio </p>
+
+            <p>  Interested in serving on our Board of Directors or volunteering for Edheads?
+                Please check out our listings on VolunteerMatch or contact us at info@edheads.org.
+                For all questions, comments, and concerns, please send an email to info@edheads.org.
+
+            </p>
+        </div>
+
+      <div className={styles.accordion}>
         <p className={styles.missionAndBoardText}>Our Board</p>
-      </button>
+      </div>
+
+      <div className={styles.accordionContent}>
+            <p>Jason Elvers,Vorys, Sater, Seymour & Pease, LLP, Columbus, Ohio </p>
+            <p>  Julie Carpenter,Cardinal Heatlh, Dublin, Ohio </p>
+            <p>  Kayleigh Hunnicutt,Dublin City Schools, School Psychologist </p>
+            <p>  Lisa Chapman,Elevated Marketing Services, Columbus, Ohio </p>
+            <p>  Cody Yarletts,Parker Hannifin,Columbus, Ohio </p>
+            <p>  Ryan J. Vonderbrink,Seegrid, New Albany, Ohio </p>
+            <p>  Joshua Yakunich, Ohio State University Wexner Medical Center, Columbus, Ohio </p>
+
+            <p>  Interested in serving on our Board of Directors or volunteering for Edheads?
+                Please check out our listings on VolunteerMatch or contact us at info@edheads.org.
+                For all questions, comments, and concerns, please send an email to info@edheads.org.
+
+            </p>
+        </div>
+
+
       
     </SlidingBox>
   );
