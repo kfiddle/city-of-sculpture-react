@@ -54,6 +54,7 @@ const BikeRacks = (props) => {
         key={Math.random()}
         source={bikeRack + ".jpeg"}
         size={listOfBikeRacks[bikeRack]}
+        title={bikeRack.title}
       ></SingleSculpture>
     );
   }

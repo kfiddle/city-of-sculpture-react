@@ -1,7 +1,7 @@
-const BIG = "big",
-  H = "horizontal",
-  V = "vertical",
-  HUGE = "huge";
+// const BIG = "big",
+//   H = "horizontal",
+//   V = "vertical",
+//   HUGE = "huge";
 
 export const listOfSculptures = [
   {
