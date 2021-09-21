@@ -3,7 +3,7 @@
   max-height: 50vh;
 }
 
-.sculptureDivPanel {
+/* .sculptureDivPanel {
     position: relative;
     top: 23vh;
     width: 250vw;
@@ -18,7 +18,7 @@
     overflow: hidden;
     transform: translateX(100vw);
     transition: 1.35s cubic-bezier(0.3, 0, 0.5, 1);
-  }
+  } */
   
   .windowFrame {
     position: relative;
@@ -30,7 +30,7 @@
     transition: 1s;
   }
   
-  .bikeDivPanel {
+  /* .bikeDivPanel {
     position: absolute;
     top: 23vh;
     width: 75vw;
@@ -45,7 +45,7 @@
     background: whitesmoke;
     transform: translateX(-80vw);
     transition: 1s;
-  }
+  } */
   
   
   .arrow {
