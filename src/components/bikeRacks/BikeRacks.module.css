@@ -1,5 +1,5 @@
 .bikeAndTiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  transition: 1.0s linear;
+  transition: .75s linear;
 }
