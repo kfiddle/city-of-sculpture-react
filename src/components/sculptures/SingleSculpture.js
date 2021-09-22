@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-import Modal from "../modal/Modal";
-
 import styles from "./Sculpture.module.css";
 
 const SingleSculpture = (props) => {
@@ -25,13 +23,13 @@ const SingleSculpture = (props) => {
   };
 
   const closeModal = () => {
-    console.log('clicked')
+    console.log("clicked");
     setSculptureClicked(false);
   };
 
   return (
     <div
-      onClick={showModal}
+      onClick={props.clicked}
       className={`${styles.tileDiv} ${styles[size]}`}
       onMouseEnter={() => {
         hoverHandlers("on");
@@ -54,9 +52,6 @@ const SingleSculpture = (props) => {
       >
         {title}
       </p>
-      {sculptureClicked && (
-        <Modal closeModal={closeModal}>Hi I'm a modal</Modal>
-      )}
     </div>
   );
 };
