@@ -43,7 +43,6 @@
 }
 
 .accordionContent {
-  display: none;
   font-size: 1rem;
   overflow: hidden;
   padding: 0rem 2rem 2rem;
