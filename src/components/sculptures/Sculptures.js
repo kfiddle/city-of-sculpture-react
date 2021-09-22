@@ -31,7 +31,10 @@ const Sculptures = (props) => {
       key={sculpture.id}
       source={sculpture.source}
       size={sculpture.size}
+      artist={sculpture.artist}
       title={sculpture.title}
+      description={sculpture.description}
+      address={sculpture.address}
       type={"sculpture"}
       clicked={clickHandler}
     ></SingleSculpture>
@@ -45,7 +48,31 @@ const Sculptures = (props) => {
       >
         {displayedSculptures}
       </TileGallery>
-      {sculptureWasClicked && <Modal closeModal={closeModal}>I am a modal of fun sculpture stuff</Modal>}
+
+      {sculptureWasClicked && <Modal closeModal={closeModal}>
+        {/* I am a modal of fun sculpture stuff */}
+        <div>
+      {/* <img
+        src={imageSrc}
+        className={`${styles.sculptureImage}`}
+      /> */}
+
+      <p>
+        className={`${styles.title}`}
+          </p>
+          <p>
+        className={`${styles.artist}`}
+          </p>
+          <p>
+        className={`${styles.address}`}
+          </p>
+          <p>
+        className={`${styles.description}`}
+          </p>
+ 
+
+    </div>
+        </Modal>}
     </div>
   );
 };

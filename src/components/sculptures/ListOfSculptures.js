@@ -8,6 +8,9 @@ export const listOfSculptures = [
     id: "1",
     title:  "SPRING",
     source: "cos1.jpg",
+    artist: "Name of Artist",
+    address: "Address of Sculpture",
+    description: "Description of Sculpture"
     // size: HUGE,
   },
   {
