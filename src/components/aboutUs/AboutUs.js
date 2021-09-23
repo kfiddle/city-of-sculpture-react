@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SlidingBox from "../slidingBox/SlidingBox";
 
+
 import styles from "./AboutUs.module.css";
 
 const AboutUs = (props) => {

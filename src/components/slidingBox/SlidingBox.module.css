@@ -1,19 +1,15 @@
 .containingDiv {
+  align-items: center;
+  background: white;
+  border: 2px solid #c1272d;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 2px solid #c1272d;
+  left: 10vw;
   position: absolute;
   top: 25vh;
-  left: 10vw;
-  /* margin: 0 25vw; */
-  /* font-weight: 300; */
-  /* line-height: 1.5rem; */
-  /* letter-spacing: .0125rem; */
-  /* width: 50vw; */
-  background: white;
-  padding: 2rem;
-  z-index: 2;
   transition: 0.5s cubic-bezier(0.4, 0, 0.4, 1);
+  z-index: 2;
 }
+
+

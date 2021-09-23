@@ -1,6 +1,27 @@
 
   .aboutUsContainer{
     width: 50vw;
+    height: 50vh;
+    overflow: scroll;
+    overflow-x: hidden;  
+    padding:2rem;
+  }
+
+    .aboutUsContainer::-webkit-scrollbar {
+      width: .5rem;
+  }
+  
+  .aboutUsContainer::-webkit-scrollbar-track {
+      background: none;
+  }
+  
+  .aboutUsContainer::-webkit-scrollbar-thumb {
+      background: #c1272d;
+      /* border-radius: .5rem; */
+  }
+  
+  .aboutUsContainer::-webkit-scrollbar-thumb:hover {
+      background: #c1272d;
   }
   
   .statementDiv {
