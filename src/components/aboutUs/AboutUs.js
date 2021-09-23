@@ -55,7 +55,7 @@ const AboutUs = (props) => {
       </div>
 
       <div className={styles.accordion}  onClick={partnersClicker}>
-        <p className={styles.missionAndBoardText}>
+        <p className={styles.accordionTitle}>
 Our Partners in the Arts
         </p>
       </div>
@@ -79,7 +79,7 @@ Our Partners in the Arts
       </div>}
 
       <div className={styles.accordion} onClick={missionClicker}>
-        <p className={styles.missionAndBoardText}>Our Board</p>
+        <p className={styles.accordionTitle}>Our Board</p>
       </div>
 
       {missionWasClicked && <div className={styles.accordionContent}>
