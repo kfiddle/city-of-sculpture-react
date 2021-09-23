@@ -157,7 +157,7 @@ export const listOfSculptures = [
   {
     id: "26",
     title:  "HERE",
-    source: "cos25.jpg",
+    source: "cos26.jpg",
     // size: H,
   },
   {

@@ -7,9 +7,6 @@ const AboutUs = (props) => {
   const [partnersWasClicked, setPartnersWasClicked] = useState(false);
   const [missionWasClicked, setMissionWasClicked] = useState(false);
 
-  // const aboutUsStatement =
-  // "On August 16, 2000,fagsdfgdfgsecognized Hamilton as “The City of Sculpture.” This sparked a vision for a group of community members who officially formed Hamilton, Ohio City of Sculpture, Inc. a 503c organization. Since that watershed event, a full Board of Trustees has been established and many new sculptures have been installed in public spaces around Hamilton. Other organizations and businesses are being energized through this vision and action.";
-
   const partnersClicker = () => {
     setPartnersWasClicked(previous => !previous);
   };
@@ -20,6 +17,7 @@ const AboutUs = (props) => {
 
   return (
     <SlidingBox>
+      <div className={styles.aboutUsContainer}>
       <div className={styles.statementDiv}>
         <p>
           On August 16, 2000, Ohio’s then governor, Bob Taft, declared and
@@ -58,7 +56,7 @@ const AboutUs = (props) => {
 
       <div className={styles.accordion}  onClick={partnersClicker}>
         <p className={styles.missionAndBoardText}>
-          Our Partners in the Arts
+Our Partners in the Arts
         </p>
       </div>
 
@@ -105,6 +103,7 @@ const AboutUs = (props) => {
           send an email to info@edheads.org.
         </p>
       </div>}
+      </div>
     </SlidingBox>
   );
 };

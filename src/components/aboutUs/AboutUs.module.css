@@ -1,12 +1,15 @@
 
-  
-  .aboutUsStatementDiv {
-    /* font-size: 1.2rem; */
-    font-weight: 300;
-    line-height: 1.6em;
-    margin: 2rem;
+  .aboutUsContainer{
+    width: 50vw;
   }
   
+  .statementDiv {
+    font-weight: 300;
+    line-height: 1.6em;
+    letter-spacing: .0125rem;
+    /* margin: 2rem; */
+  }
+
   .missionAndBoard{
     background-color: #c1272d;
     width: 60%;
@@ -31,27 +34,26 @@
     cursor: pointer;
     font-size: 1.125rem;
     font-weight: 500;
-    /* margin-bottom: 1rem; */
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     transition: 0.4s;
-
-    /* background-color: #c1272d; */
-    width: 60%;
-    /* height: 3%; */
+    width: 90%;
     margin: .5rem;
-    /* border: none; */
 }
 
 .accordionContent {
-  font-size: 1rem;
+  font-size: .85rem;
+  font-weight: 300;
   overflow: hidden;
-  padding: 0rem 2rem 2rem;
+  line-height: 1.5;
+  letter-spacing: .0125rem;
+  padding: 0rem 1rem 2rem;
 }
 
-/* 
-.accordion:after, .nestedAccordion:after {
-  content: '\02795';
-  float: right;
-  font-size: 1rem;
-  color: #fff;
-} */
+hr{
+  background-color: #c1272d;
+  border: none;
+  height: .0125rem;
+  width: 50%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
