@@ -17,7 +17,7 @@ const Artists = (props) => {
   return (
     <SlidingBox>
 
-      <div className={styles.artistContainer}>
+      <div className={styles.innerContentContainer}>
 
       <div className={styles.accordion}  onClick={artistClicker}> 
         <p className={styles.artistName}>DENNIS BAKER</p>
@@ -49,8 +49,11 @@ const Artists = (props) => {
       </div>
 
       {artistWasClicked && <div className={styles.accordionContent}>
-          Artist Description
-      </div>}
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus dolor eu ipsum 
+      ornare laoreet. Aenean tempus, libero ac porta tempus, enim elit fringilla ante, 
+      vitae luctus orci elit ac erat. Sed volutpat dolor sit amet ultricies cursus. 
+      Phasellus placerat, tellus porta cursus elementum, risus massa ornare nunc, 
+      fermentum commodo.      </div>}
 
       </div>
 

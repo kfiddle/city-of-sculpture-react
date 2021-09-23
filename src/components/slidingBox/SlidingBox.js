@@ -15,7 +15,8 @@ const SlidingBox = (props) => {
     <div
       className={styles.containingDiv}
       style={{ transform: boxPosition }}
-    >
+    >   
+
       {props.children}
     </div>
   );

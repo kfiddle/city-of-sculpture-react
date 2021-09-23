@@ -1,6 +1,29 @@
-.artistContainer{
-  margin: 1rem 2rem;
-}
+
+  
+  .innerContentContainer{
+    width: 50vw;
+    height: 50vh;
+    overflow: scroll;
+    overflow-x: hidden;  
+    padding:2rem;
+  }
+
+    .innerContentContainer::-webkit-scrollbar {
+      width: .5rem;
+  }
+  
+  .innerContentContainer::-webkit-scrollbar-track {
+      background: none;
+  }
+  
+  .innerContentContainer::-webkit-scrollbar-thumb {
+      background: #c1272d;
+      /* border-radius: .5rem; */
+  }
+  
+  .innerContentContainer::-webkit-scrollbar-thumb:hover {
+      background: #c1272d;
+  }
 
 .accordion {
     /* background-color: #c1272d; */

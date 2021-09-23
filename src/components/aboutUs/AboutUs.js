@@ -1,7 +1,6 @@
 import { useState } from "react";
 import SlidingBox from "../slidingBox/SlidingBox";
 
-
 import styles from "./AboutUs.module.css";
 
 const AboutUs = (props) => {
@@ -18,7 +17,7 @@ const AboutUs = (props) => {
 
   return (
     <SlidingBox>
-      <div className={styles.aboutUsContainer}>
+      <div className={styles.innerContentContainer}>
       <div className={styles.statementDiv}>
         <p>
           On August 16, 2000, Ohio’s then governor, Bob Taft, declared and
