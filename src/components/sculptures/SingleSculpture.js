@@ -6,7 +6,7 @@ const SingleSculpture = (props) => {
   const [imageHoverState, setImageHoverState] = useState(false);
   const [sculptureClicked, setSculptureClicked] = useState(false);
 
-  const { title, source, size, type } = props;
+  const { title, source, size, type, sculpture } = props;
 
   let imageSrc;
 
@@ -29,7 +29,7 @@ const SingleSculpture = (props) => {
 
   return (
     <div
-      onClick={props.clicked}
+      onClick={() => props.clicked(sculpture)}
       className={`${styles.tileDiv} ${styles[size]}`}
       onMouseEnter={() => {
         hoverHandlers("on");

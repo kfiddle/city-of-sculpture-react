@@ -3,6 +3,7 @@ import { listOfSculptures } from "./ListOfSculptures";
 
 import TileGallery from "../tileGallery/TileGallery";
 import SingleSculpture from "./SingleSculpture";
+import SculptureDetails from './SculptureDetails';
 import Modal from "../modal/Modal";
 import styles from "./Sculptures.module.css";
 import { unmountComponentAtNode } from "react-dom";
@@ -11,6 +12,7 @@ const Sculptures = (props) => {
   const [sculpturesPosition, setSculpturesPosition] =
     useState("translateX(100vw)");
   const [sculptureWasClicked, setSculptureWasClicked] = useState(false);
+  const [clickedSculpture, setClickedSculpture] = useState({});
 
   useEffect(() => {
     const slideTimer = setTimeout(() => {
@@ -18,8 +20,10 @@ const Sculptures = (props) => {
     }, 500);
   }, []);
 
-  const clickHandler = () => {
+  const clickHandler = (sculpture) => {
     setSculptureWasClicked(true)
+    setClickedSculpture(sculpture)
+
   };
 
   const closeModal = () => {
@@ -29,9 +33,12 @@ const Sculptures = (props) => {
   const displayedSculptures = listOfSculptures.map((sculpture) => (
     <SingleSculpture
       key={sculpture.id}
+      sculpture={sculpture}
+
       source={sculpture.source}
       size={sculpture.size}
       title={sculpture.title}
+
       type={"sculpture"}
       clicked={clickHandler}
     ></SingleSculpture>
@@ -45,8 +52,9 @@ const Sculptures = (props) => {
       >
         {displayedSculptures}
       </TileGallery>
-      {sculptureWasClicked && <Modal closeModal={closeModal}>I am a modal of fun sculpture stuff</Modal>}
+      {sculptureWasClicked && <SculptureDetails closeModal={closeModal} sculpture={clickedSculpture} type={'sculpture'}/>}
     </div>
+
   );
 };
 
