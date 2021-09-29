@@ -8,6 +8,9 @@ export const listOfSculptures = [
     id: "1",
     title:  "SPRING",
     source: "cos1.jpg",
+    description:"A two figure life-sized bronze piece shows college-aged students situated in poses as if studying between classes. Created in 1979, it was installed in 1998, donated by Richard Fitton in honor of his parents.",
+    artist:" J. Seward Johnson, Jr.",
+    address:"The Fitton Center, 101 Monument Ave.",
     // size: HUGE,
   },
   {

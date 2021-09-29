@@ -4,7 +4,7 @@ import Card from "../Card";
 import styles from "./SculptureDetails.module.css";
 
 const SculptureDetails = (props) => {
-  const { title, source, description } = props.sculpture;
+  const { title, source, description, artist, address, } = props.sculpture;
 
   let imageSrc =
     props.type === "sculpture"
@@ -17,7 +17,7 @@ const SculptureDetails = (props) => {
 
   return (
     <Modal closeModal={closeModal}>
-      <div>{title}</div>
+     
 
       <img
         src={imageSrc}
@@ -25,6 +25,10 @@ const SculptureDetails = (props) => {
         //   imageHoverState ? styles.hover : ""
         // }`}
       />
+
+      <div>{title}</div>
+      <div>{artist}</div>
+      <div>{address}</div>
       <div>{description}</div>
     </Modal>
   );
