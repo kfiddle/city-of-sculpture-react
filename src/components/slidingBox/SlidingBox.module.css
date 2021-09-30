@@ -12,12 +12,5 @@
   /* z-index: 2; */
 }
 
-.innerContentContainer{
-  width: 50vw;
-  height: 50vh;
-  overflow: scroll;
-  overflow-x: hidden;  
-  padding:2rem;
-}
 
 
