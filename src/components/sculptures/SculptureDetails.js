@@ -1,5 +1,5 @@
 import Modal from "../modal/Modal";
-import Card from "../Card";
+// import Card from "../Card";
 
 import styles from "./SculptureDetails.module.css";
 

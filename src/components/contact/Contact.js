@@ -3,51 +3,56 @@ import SlidingBox from "../slidingBox/SlidingBox";
 
 import styles from './Contact.module.css';
 
-const Contact = props => {
+import React, { useState } from "react";
 
+const ContactForm = () => {
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("Sending...");
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
+    
+    
     return (
         <SlidingBox>
         <div className={styles.innerContentContainer}>
+
+        <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" required />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" required />
+      </div>
+      <div>
+        <label htmlFor="message">Message:</label>
+        <textarea id="message" required />
+      </div>
+      <button type="submit">{status}</button>
+    </form>
+
         
-        <form method="post">
-
-                            <div className={styles.accountRowOne}>
-                                <div className={styles.firstName}>
-                                    <input type="text" placeholder="First Name"
-                                           className={styles.formControl}
-                                           required minlength="1" maxlength="20" />
-                                </div>
-
-                                <div className={styles.lastName}>
-                                    <input type="text" placeholder="Last Name" 
-                                          className={styles.formControl}
-                                           required minlength="1" maxlength="20" />
-                                </div>
-                            </div>
-
-                            <div className={styles.accountRowTwo}>
-                                <div className={styles.email}>
-                                        <input type="email" placeholder="Email" 
-                                               className={styles.formControl} required />
-                                </div>
-                                </div>
-
-                      <div className={styles.description}>
-                                    <input type="text area" name="description" className={styles.formControl} />
-                                </div>
-                          
-
-                            <div className={styles.buttonContainer}>
-                                <button type="submit" className={styles.signUpButton}>Sign Up</button>
-                        
-                            </div>
-                         
-
-                    </form>
-    
         </div>
       </SlidingBox>
       );
 };
 
-export default Contact;
+export default ContactForm;
