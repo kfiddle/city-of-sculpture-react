@@ -12,19 +12,26 @@ const Artist = (props) => {
   };
 
   return (
-    <div className={styles.innerContentContainer}>
+   
+
+      <div className={styles.accordionContainer}> 
+
       <div className={styles.accordion} onClick={artistClicker}>
+
         <p className={styles.artistName}>{name}</p>
       </div>
 
       {accordionClicked && (
         <div className={styles.accordionContent}>
-          <p>{sculpture}</p>
+          <div className={styles.sculptureTitle}>{sculpture}</div>
 
           <p>{bio}</p>
-        </div>
+          <hr className={styles.artistHr} />
+        </div> 
       )}
-    </div>
+
+</div>
+
   );
 };
 

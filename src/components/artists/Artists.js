@@ -105,57 +105,129 @@ const listOfArtists = [
   bio:"Edgar Tafur, a former Hamilton resident, created ‘Space Tower’ for the Cincinnati Playhouse in the Park. It was purchased by Hamilton physician Dr. Richard Glins in 1980 and installed in the Peter R. Rentschler Park on the west bank of the Great Miami River near the High-Main Street Bridge. The bicentennial Gift to the City of Hamilton from Historic Hamilton, Inc. in 1991 was the restoration of ‘Symmes Monument’, which was completed by Mr. Tafur. Additionally, Tafur was commissioned for a piece at the Lewis Center Chapel in Cincinnati.",
 },
 {
-  id: "3",
+  id: "17",
   name: "RUDOLPH F. THEIM",
-  sculpture: "Snapshot #12",
-  bio:" ",
-},
-{
-  id: "3",
-  name: "JANE DEDECKER",
   sculpture: "Victory, The Jewel of the Soul (a.k.a. Billy Yank) #2",
   bio:"Rudolph Thiem, born in 1859, studied sculpture making in Berlin, Germany before immigrating to Hamilton in 1887. Thiem’s work at the Estate Stove Company in Hamilton included the art that adorned the nationally recognized Estate stoves. His design for ‘Victory’, a 3,500 pound, 14 foot, bronze statue of a young Civil War soldier, was selected in a national competition in 1906. Details on the statue are so exact that coat buttons on the bronze soldier include the letters USA. Mr. Thiem modeled the soldier’s face after his own. The statue is waving his cap victoriously in the air while standing on an exploded shell. ",
 },
 {
-  id: "3",
-  name: "JANE DEDECKER",
-  sculpture: "Snapshot #12",
+  id: "18",
+  name: "ALFRED TIBOR",
+  sculpture: "The Happy Family, Fort Hamilton Hospital #18",
+  bio:" Mr. Alfred Tibor of Columbus was chosen as the artist for a special piece of artwork in honor of the hospital’s 75th anniversary because his design truly matched Fort Hamilton’s premise that everyone at Fort Hamilton, from the physicians to the custodians, is working to provide our families with the best care available, their “dedication and knowledge celebrate life”. Mr. Tibor was born in Konyar, Hungary in 1920. He was subjected to the brutality of the Nazi regime, enslaved by the Germans and eventually taken prisoner by the Russians. Alfred survived the inhumanity he experienced through his strong will and determination. After World War II Alfred returned to Budapest. In 1957, Alfred, his wife and two small children arrived penniless but free in the United States. Eventually, Mr. Tibor came to Columbus, Ohio. In 1974 he began doing sculptures in a variety of materials determined to show man’s humanity through his art. This beautiful, life sized, bronze sculpture by Alfred Tibor was installed near the front entrance to Fort Hamilton Hospital. Commemorative bricks are available to honor or remember loved ones. For more information you can contact the Fort Hamilton Healthcare Foundation @ 513-785-4787.",
+},
+{
+  id: "19",
+  name: "L'DEANE TRUEBLOOD",
+  sculpture: "Hanna #9",
+  bio:"Born in Norman Okalahoma, L'Deane Trueblood resides in St. George Utah among the most spectacular redrock country in the southwest. Proud mother and grandmother, she has lived and traveled across the United States as well as in Europe and the Middle East. Her sculptures and paintings are found in public and private collections throughout the United States and internationally. Working mostly with children as subjects, she has created a series of highly sought-after life-size bronzes. The poses are subtle, the motion implied, understated. With just a turn of a shoulder or the graceful gesture of a hand, L'Deane masterfully conveys a dynamism that few modern sculptors can match. Recently, she has also been commissioned to produce several larger-than-life monuments which now stand in prominent public spaces in several states. ",
+},
+{
+  id: "20",
+  name: "LYMAN WHITAKER",
+  sculpture: "Wind Forest #25",
+  bio:"Lyman Whitaker is a native of Utah. He received his Bachelor degree in sculpture from the University of Utah where he studied classical and contemporary sculpture. Lyman has always kept art as a primary focus. To support the pursuit of his art in the early days, he has been a laborer, a carpenter, a mechanic, a student, a teacher, a traveler, and a designer. His diverse style is evident in his art. He works with a multitude of materials and processes and enjoys making connections through his art. His current focus involves wind sculptures, but his larger body of work is varied and ranges from traditional bronzes to fabricated metal sculptures to fountains. Lyman's working knowledge of building and mechanical processes is evident in his art.",
+},
+{
+  id: "21",
+  name: "KRISTEN VISBAL",
+  sculpture: "The American Cape #13",
+  bio:" Visbal is a graduate of the prestigious Lost Wax Casting apprentice program at the Johnson Atelier art casting foundry in Mercerville, NJ, who established a private modeling studio on a vineyard in Lewes, DE six years ago. The artist’s other public works include a life-size sculpture of Olympic gold medallist Bob Hayes running with the 1964 Japanese torch, the 10-foot Sea Express composition of a boy riding a dolphin on a wave, both in parks in Florida, and Girl Chasing Butterflies currently on site at the Merrill Lynch corporate headquarters in Plainsboro, NJ. Visbal is an active member of the National Sculpture Society, The Catharine Lorillard Wolfe Arts Club and the Pen and Brush Club, all in New York City and is a regular participant in the annual Brookgreen Gardens Sculpture Park Curator's Auction, the oldest and largest sculpture park in America.",
+},
+{
+  id: "22",
+  name: "SEWARD JOHNSON",
+  sculpture: "Spring #7 | First ride #5",
+  bio:" In 1968, after a lifetime as a painter, J. Seward Johnson, Jr., turned his talents to the medium of sculpture. Since then, more than 200 of Johnson's life-size cast bronze figures have been featured in private collections in the United States, Canada, Europe and Asia, as well as prominent places in the public realm. Each of his sculptures is entirely bronze. The realism of the textures and details is the hallmark of Johnson's art, achieved with hours of intense labor. Seward Johnson has been developing unique chemistry for the colors of his sculptures for years. His sculptures have been highlighted in Architectural Digest, New Yorker Magazine, The New York Times, The Boston Globe, Life Magazine, and others.",
+},
+{
+  id: "23",
+  name: "BRADY LANTZ",
+  sculpture: "Millikin Woods Totem Pole #40",
+  bio:"Brady Lantz is the designer and ice sculptur for Artic Diamond. Artic Diamond Ice Sculptures is among the nation’s top ice sculpting companies. We are located in Southwest Ohio servicing: Cincinnati, Dayton, Louisville, Lexington and Indianapolis. We have done work for our clients all over the United States. By integrating artistic creativity, over 30 years of combined experience, and state of the art technology, we produce unparalleled quality ice displays for all occasions. Artic Diamond has been serving hotels, restaurants, country clubs, liquor distributors, event planners, and retail customers for over fifteen years. We also provide ice sculptures of all sizes for outdoor festivals and events that include multi- block displays and interactive play areas. We specialize in creating custom ice bars that are recognized as the best in the industry. ",
+},
+{
+  id: "24",
+  name: "ROBERT MCCLOSKEY",
+  sculpture: "Municipal Building Bas-Relief Sculpture Carvings",
+  bio:"Robert McCloskey, a native of Hamilton, Ohio, created the bas-relief images found on the former Hamilton Municipal Building on High Street. After graduating from Hamilton High School in 1932, McCloskey attended Boston's Vesper George Art School and New York's National Academy of Design. McCloskey returned to Hamilton, began drawing and painting everyday things around him, and produced his first children's book, Lentil. McCloskey won the Caldicott Medal twice, in 1958 for Time of Wonder and in 1942 for Make Way for Ducklings. Three of his books have also been honored by the American Library Association as Caldicott Honor Books. Although he spent most of his adult life elsewhere, he is still known as one of Hamilton's favorite sons. In the six stories in Homer Price, McCloskey looks back with humor and affection at his Hamilton childhood. ",
+},
+{
+  id: "25",
+  name: "RAY MILLER",
+  sculpture: "Two Halves of a Whole #20",
   bio:" ",
 },
 {
-  id: "3",
-  name: "JANE DEDECKER",
-  sculpture: "Snapshot #12",
+  id: "26",
+  name: "MICHAEL BIGGER",
+  sculpture: "Helios Guardian #22",
   bio:" ",
 },
 {
-  id: "3",
-  name: "JANE DEDECKER",
-  sculpture: "Snapshot #12",
+  id: "27",
+  name: "PHILLIP JOSEPH",
+  sculpture: "Passages #27",
   bio:" ",
 },
 {
-  id: "3",
-  name: "JANE DEDECKER",
-  sculpture: "Snapshot #12",
+  id: "28",
+  name: "CYNTHIA MCKEAN",
+  sculpture: "Family of Man #30",
   bio:" ",
 },
 {
-  id: "3",
-  name: "JANE DEDECKER",
-  sculpture: "Snapshot #12",
+  id: "29",
+  name: "BRODIN STUDIOS",
+  sculpture: "The Protector #31",
+  bio:" In 1978, Brodin Studios began as a small company founded by two brothers, Neil Brodin, a Minneapolis Police Officer and, artist, Roger Brodin, in the third story of a warehouse, sitting just on the outskirts of downtown Minneapolis.Brodin Studios, judged by that long record, is dedicated to creating awards and sculptures of exceptional detail and great value to individuals in Law Enforcement, Public Safety and Military.",
+},
+{
+  id: "30",
+  name: "GLENNA GOODACRE",
+  sculpture: "Park Place #32",
   bio:" ",
 },
 {
-  id: "3",
-  name: "JANE DEDECKER",
-  sculpture: "Snapshot #12",
+  id: "31",
+  name: "RONNIE WELLS",
+  sculpture: "Riverside Mallards #33",
   bio:" ",
 },
 {
-  id: "3",
-  name: "JANE DEDECKER",
-  sculpture: "Snapshot #12",
+  id: "32",
+  name: "TOM TSUCHIYAR",
+  sculpture: "Bridge Medallions #35",
+  bio:" ",
+},
+{
+  id: "33",
+  name: "JOHN LEON",
+  sculpture: "Learn & Grow Together #37",
+  bio:" ",
+},
+{
+  id: "34",
+  name: "ERIC DAVID LAXMAN",
+  sculpture: "Conversation in Six Parts #41",
+  bio:" ",
+},
+{
+  id: "35",
+  name: "DON DRUMM",
+  sculpture: "Kitty Bench #42",
+  bio:" ",
+},
+{
+  id: "36",
+  name: "ANDREW CARSON",
+  sculpture: "Double Crazy Swirl #43",
+  bio:" ",
+},
+{
+  id: "37",
+  name: "BRIAN F. RUSSELL",
+  sculpture: "The Torrent #44",
   bio:" ",
 },
 ];
@@ -175,58 +247,14 @@ const displayedArtists = listOfArtists.map(artist => (
 ))
 
 return (
-  <SlidingBox>{displayedArtists}</SlidingBox>
+  <SlidingBox>
+    <div className={styles.innerContentContainer}>
+    {displayedArtists}
+    </div>
+    </SlidingBox>
 )
 
 
-  // return (
-  //   <SlidingBox>
-  //     <div className={styles.innerContentContainer}>
-  //       <div className={styles.accordion} onClick={artistClicker}>
-  //         <p className={styles.artistName}>DENNIS BAKER</p>
-  //       </div>
-
-  //       {artistWasClicked && (
-  //         <div className={styles.accordionContent}>
-  //           <p>Star Formation #8</p>
-
-  //           <p>
-  //             The City of Sculpture's first artist-in-residence is Dennis C.
-  //             Baker, who is working at Hamilton Scrap Processors each weekend.
-  //             Dennis grew up in Northern Indiana and attended Manchester
-  //             College. He graduated with a degree in biology and biochemistry.
-  //             During college years, he took classes in art, specifically
-  //             painting. In 1979, Dennis moved to Cincinnati where he works for a
-  //             cardiovascular device company, Medtronic, Inc. Now a consultant
-  //             for them, Dennis spends his time in operating rooms. "I have
-  //             always enjoyed working with my hands as a stress reliever." Dennis
-  //             says. " Over the years I constantly tried new things - one of
-  //             which was welding, which I absolutely fell in love with." Dennis
-  //             graduated in 1996 from a vocational school's welding class and has
-  //             taken several advanced courses since on welding, painting, and
-  //             applying gold leaf & patina's to his artwork. He considers himself
-  //             to essentially be self-taught and is proud of his development.
-  //           </p>
-  //         </div>
-  //       )}
-
-  //       <div className={styles.accordion} onClick={artistClicker}>
-  //         <p className={styles.artistName}>Artist Name </p>
-  //       </div>
-
-  //       {artistWasClicked && (
-  //         <div className={styles.accordionContent}>
-  //           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus
-  //           dolor eu ipsum ornare laoreet. Aenean tempus, libero ac porta
-  //           tempus, enim elit fringilla ante, vitae luctus orci elit ac erat.
-  //           Sed volutpat dolor sit amet ultricies cursus. Phasellus placerat,
-  //           tellus porta cursus elementum, risus massa ornare nunc, fermentum
-  //           commodo.{" "}
-  //         </div>
-  //       )}
-  //     </div>
-  //   </SlidingBox>
-  // );
 };
 
 export default Artists;

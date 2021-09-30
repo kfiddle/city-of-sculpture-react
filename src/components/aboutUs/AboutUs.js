@@ -26,7 +26,7 @@ const AboutUs = (props) => {
           “Hamilton, Ohio, City of Sculpture” in September of 2000. Since that
           watershed event, a full Board of Trustees has been established, and
           many new sculptures have been installed in public spaces around
-          Hamilton.{" "}
+          Hamilton.
         </p>
 
         <p>
@@ -68,7 +68,7 @@ Our Partners in the Arts
           special programming ranging from art classes to nationally touring
           theater productions.
         </p>
-        <hr />
+        <hr className={styles.aboutUsHr}/>
         <p>
           A 265 acre sculpture park and outdoor museum nestled on the edge of
           town that combines the lure of nature with the dynamic presence of
@@ -90,13 +90,13 @@ Our Partners in the Arts
         <p> Cody Yarletts,Parker Hannifin,Columbus, Ohio </p>
         <p> Ryan J. Vonderbrink,Seegrid, New Albany, Ohio </p>
         <p>
-          {" "}
+         
           Joshua Yakunich, Ohio State University Wexner Medical Center,
-          Columbus, Ohio{" "}
+          Columbus, Ohio
         </p>
 
         <p>
-          {" "}
+        
           Interested in serving on our Board of Directors or volunteering for
           Edheads? Please check out our listings on VolunteerMatch or contact us
           at info@edheads.org. For all questions, comments, and concerns, please

@@ -1,0 +1,30 @@
+.innerContentContainer{
+    width: 50vw;
+    height: 50vh;
+    overflow: scroll;
+    overflow-x: hidden;  
+    padding:2rem;
+  }
+
+    .innerContentContainer::-webkit-scrollbar {
+      width: .5rem;
+  }
+  
+  .innerContentContainer::-webkit-scrollbar-track {
+      background: none;
+  }
+  
+  .innerContentContainer::-webkit-scrollbar-thumb {
+      background: #c1272d;
+      /* border-radius: .5rem; */
+  }
+  
+  .innerContentContainer::-webkit-scrollbar-thumb:hover {
+      background: #c1272d;
+  }
+  
+  .statementDiv {
+    font-weight: 300;
+    line-height: 1.6em;
+    letter-spacing: .0125rem;
+  }
