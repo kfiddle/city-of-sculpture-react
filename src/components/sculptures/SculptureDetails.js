@@ -18,18 +18,19 @@ const SculptureDetails = (props) => {
   return (
     <Modal closeModal={closeModal}>
      
-
+      <div className={styles.modalcontainer}>
+     <div className={styles.image}>
       <img
         src={imageSrc}
-        // className={`${styles.sculptureImage} ${
-        //   imageHoverState ? styles.hover : ""
-        // }`}
       />
+      </div>
 
-      <div>{title}</div>
-      <div>{artist}</div>
-      <div>{address}</div>
-      <div>{description}</div>
+      <div className={styles.title}>{title}</div>
+      <div className={styles.artist}>{artist}</div>
+      <div className={styles.address}>{address}</div>
+      <div className={styles.description}>{description}</div>
+      </div>
+
     </Modal>
   );
 };
