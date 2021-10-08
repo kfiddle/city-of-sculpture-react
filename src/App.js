@@ -28,6 +28,7 @@ function App() {
     setChosenOption(choice);
   };
 
+
   return (
     <Fragment>
       <Header />
@@ -37,7 +38,7 @@ function App() {
         mapOpen={GETTING_AROUND}
         bikeRacksOpen={BIKE_RACKS}
       />
-      {(chosenOption === "The Sculptures" || ABOUT_US) && <Sculptures />}
+      {(SCULPTURES || ABOUT_US || ARTISTS || CONTACT_US || HAMILTON) && <Sculptures />}
       {ABOUT_US && <AboutUs />}
       {BIKE_RACKS && <BikeRacks />}
       {GETTING_AROUND && <GettingAround />}

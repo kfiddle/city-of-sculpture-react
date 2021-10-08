@@ -1,27 +1,16 @@
 .containingDiv {
+  align-items: center;
+  background: white;
+  border: 2px solid #c1272d;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 2px solid #c1272d;
+  left: 10vw;
   position: absolute;
   top: 25vh;
-  left: 10vw;
-  font-weight: 300;
-  line-height: 1.5rem;
-  width: 50vw;
-  background: white;
-  padding: 1rem;
-  z-index: 1;
   transition: 0.5s cubic-bezier(0.4, 0, 0.4, 1);
+  /* z-index: 2; */
 }
 
 
-
-  
-.statementDiv {
-  font-weight: 300;
-  line-height: 1.6em;
-  margin: 2rem;
-}
 

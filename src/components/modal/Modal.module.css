@@ -12,24 +12,27 @@
     width: 100%;
     height: 100vh;
     z-index: 20;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: #000;
+    opacity: .8;
   }
   
   .modal {
     position: fixed;
-    top: 10vh;
-    left: 5%;
-    width: 50%;
+    top: 15px;
+    /* left: 0; */
+    /* width: 520px; */
+    margin: 0rem 20rem 0 20rem;
     background-color: white;
     padding: 2rem;
-    border-radius: 14px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    /* border-radius: 14px; */
+    /* box-shadow: 0 2px 8px rgb(0 0 0 / 25%); */
     z-index: 30;
-    animation: slide-down 300ms ease-out forwards;
+    animation: Modal_Modal_slide-down__50bqD__1aNKT 300ms ease-out forwards;
   }
 
   .content {
     width: 100%;
+    /* background-color: red; */
   }
   
   @keyframes slide-down {
@@ -43,7 +46,7 @@
     }
   }
   
-  .control {
+  /* .control {
     margin-bottom: 0.5rem;
   }
   
@@ -94,5 +97,5 @@
   .button:hover {
     background: slateblue;
     color: #252525;
-  }
+  } */
   

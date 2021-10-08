@@ -7,9 +7,6 @@ const AboutUs = (props) => {
   const [partnersWasClicked, setPartnersWasClicked] = useState(false);
   const [missionWasClicked, setMissionWasClicked] = useState(false);
 
-  // const aboutUsStatement =
-  // "On August 16, 2000,fagsdfgdfgsecognized Hamilton as “The City of Sculpture.” This sparked a vision for a group of community members who officially formed Hamilton, Ohio City of Sculpture, Inc. a 503c organization. Since that watershed event, a full Board of Trustees has been established and many new sculptures have been installed in public spaces around Hamilton. Other organizations and businesses are being energized through this vision and action.";
-
   const partnersClicker = () => {
     setPartnersWasClicked(previous => !previous);
   };
@@ -20,6 +17,7 @@ const AboutUs = (props) => {
 
   return (
     <SlidingBox>
+      <div className={styles.innerContentContainer}>
       <div className={styles.statementDiv}>
         <p>
           On August 16, 2000, Ohio’s then governor, Bob Taft, declared and
@@ -28,7 +26,7 @@ const AboutUs = (props) => {
           “Hamilton, Ohio, City of Sculpture” in September of 2000. Since that
           watershed event, a full Board of Trustees has been established, and
           many new sculptures have been installed in public spaces around
-          Hamilton.{" "}
+          Hamilton.
         </p>
 
         <p>
@@ -57,8 +55,8 @@ const AboutUs = (props) => {
       </div>
 
       <div className={styles.accordion}  onClick={partnersClicker}>
-        <p className={styles.missionAndBoardText}>
-          Our Partners in the Arts
+        <p className={styles.accordionTitle}>
+Our Partners in the Arts
         </p>
       </div>
 
@@ -70,7 +68,7 @@ const AboutUs = (props) => {
           special programming ranging from art classes to nationally touring
           theater productions.
         </p>
-        <hr />
+        <hr className={styles.aboutUsHr}/>
         <p>
           A 265 acre sculpture park and outdoor museum nestled on the edge of
           town that combines the lure of nature with the dynamic presence of
@@ -81,30 +79,43 @@ const AboutUs = (props) => {
       </div>}
 
       <div className={styles.accordion} onClick={missionClicker}>
-        <p className={styles.missionAndBoardText}>Our Board</p>
+        <p className={styles.accordionTitle}>Our Board</p>
       </div>
 
       {missionWasClicked && <div className={styles.accordionContent}>
-        <p>Jason Elvers,Vorys, Sater, Seymour & Pease, LLP, Columbus, Ohio </p>
-        <p> Julie Carpenter,Cardinal Heatlh, Dublin, Ohio </p>
-        <p> Kayleigh Hunnicutt,Dublin City Schools, School Psychologist </p>
-        <p> Lisa Chapman,Elevated Marketing Services, Columbus, Ohio </p>
-        <p> Cody Yarletts,Parker Hannifin,Columbus, Ohio </p>
-        <p> Ryan J. Vonderbrink,Seegrid, New Albany, Ohio </p>
-        <p>
-          {" "}
-          Joshua Yakunich, Ohio State University Wexner Medical Center,
-          Columbus, Ohio{" "}
-        </p>
-
-        <p>
-          {" "}
-          Interested in serving on our Board of Directors or volunteering for
-          Edheads? Please check out our listings on VolunteerMatch or contact us
-          at info@edheads.org. For all questions, comments, and concerns, please
-          send an email to info@edheads.org.
-        </p>
+<div className={styles.boardContent}>
+<div> 
+OFFICERS:
+<br/>
+President: Jacob Stone<br/>
+Vice President: Taylor Welch<br/>
+Secretary: Dianne Fitton<br/>
+Treasurer: Marie Brown
+</div>
+<div> 
+BOARD:<br/>
+Nick Bauer<br/>
+Rhonda Brown<br/>
+Don Garrett<br/>
+Nick Garuckas<br/>
+Marcia Koenig<br/>
+Nancy O’Neill<br/>
+Steve Timmer<br/>
+Karen Wittmer
+</div>
+<div> 
+ADVISORY BOARD:<br/>
+Sherry Armstead<br/>
+Neil Cohen<br/>
+Mike Dingeldein  <br/>     
+Patti Froelke<br/>
+Gerry Hammond<br/>
+Tim Naab<br/>
+Sue Samoviski
+</div>
+</div>
       </div>}
+      </div>
     </SlidingBox>
   );
 };

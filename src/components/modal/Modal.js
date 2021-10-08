@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 
-import Card from '../Card';
+// import Card from '../Card';
 import classes from "./Modal.module.css";
 
 const Backdrop = (props) => {
@@ -27,7 +27,7 @@ const Modal = (props) => {
 
       {ReactDOM.createPortal(
         <ModalOverlay>
-          <Card>{props.children}</Card>
+         {props.children}
         </ModalOverlay>,
         portalElement
       )}
