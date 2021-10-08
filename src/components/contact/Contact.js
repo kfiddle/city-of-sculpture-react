@@ -55,18 +55,18 @@ const ContactForm = () => {
       <div className={styles.innerContentContainer}>
         <form onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name">Name:</label>
-            <input ref={nameRef} type="text" id="name" required />
+            {/* <label htmlFor="name">Name:</label> */}
+            <input ref={nameRef} type="text" id="name" placeholder="Name" className={styles.inputFields} required />
           </div>
           <div>
-            <label htmlFor="email">Email:</label>
-            <input ref={emailRef} type="email" id="email" required />
+            {/* <label htmlFor="email">Email:</label> */}
+            <input ref={emailRef} type="email" id="email"  placeholder="Email" className={styles.inputFields} required />
           </div>
           <div>
-            <label htmlFor="message">Message:</label>
-            <textarea ref={messageRef} id="message" required />
+            {/* <label htmlFor="message">Message:</label> */}
+            <textarea ref={messageRef} id="message" placeholder="Message" className={styles.inputFields} required />
           </div>
-          <button type="submit">{status}</button>
+          <div type="submit" className={styles.submitButton}>{status}</div>
         </form>
       </div>
     </SlidingBox>

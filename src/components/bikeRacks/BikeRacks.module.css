@@ -3,3 +3,7 @@
   grid-template-columns: 1fr 1fr;
   transition: .75s linear;
 }
+
+.title{
+  text-transform: uppercase;
+}

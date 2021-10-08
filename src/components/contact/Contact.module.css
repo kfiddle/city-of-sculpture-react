@@ -28,3 +28,28 @@
     line-height: 1.6em;
     letter-spacing: .0125rem;
   }
+
+  .inputFields{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  ::placeholder{
+    color: #c1272d;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .submitButton{
+    background-color: #c1272d;
+    color: #fff;
+    font-size: 1.5;
+    padding: 1rem 2rem;
+    /* outline: none; */
+    width: 30%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+ 

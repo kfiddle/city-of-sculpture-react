@@ -45,19 +45,19 @@ const BikeRacks = (props) => {
   // };
 
   const listOfBikeRacks = [
-    { id: 1, title: "some title", source: 'barclays.jpeg' },
-    { id: 2, title: "some title", source: 'butlerTech.jpeg' },
-    { id: 3, title: "some title", source: 'communityFirst.jpeg' },
-    { id: 4, title: "some title", source: 'developmentDisabilities.jpeg' },
-    { id: 5, title: "some title", source: 'fortHamHospital.jpeg' },
-    { id: 6, title: "some title", source: 'hamClass.jpeg' },
-    { id: 7, title: "some title", source: 'hamClass25.jpeg' },
-    { id: 8, title: "some title", source: 'hamClass25Owl.jpeg' },
-    { id: 9, title: "some title", source: 'hamiltonParksConservancy.jpeg' },
-    { id: 10, title: "some title", source: 'miamiURegionals.jpeg' },
-    { id: 11, title: "some title", source: 'pikeFamily.jpeg' },
-    { id: 11, title: "some title", source: 'primaryHealth.jpeg' },
-    { id: 11, title: "some title", source: 'thyssenkruppBilsten.jpeg' },
+    { id: 1, title: "Barclays", source: 'barclays.jpeg' },
+    { id: 2, title: "Butler Tech", source: 'butlerTech.jpeg' },
+    { id: 3, title: "Community First Solutions", source: 'communityFirst.jpeg' },
+    { id: 4, title: "Butler County Board forDdevelopmental Disabilities", source: 'developmentDisabilities.jpeg' },
+    { id: 5, title: "Fort Hamilton Hospital", source: 'fortHamHospital.jpeg' },
+    { id: 6, title: "Leadership Hamilton Class 26", source: 'hamClass.jpeg' },
+    { id: 7, title: "Leadership Hamilton Class 25", source: 'hamClass25.jpeg' },
+    { id: 8, title: "Leadership Hamilton Class 25", source: 'hamClass25Owl.jpeg' },
+    { id: 9, title: "Hamilton Parks Conservancy", source: 'hamiltonParksConservancy.jpeg' },
+    { id: 10, title: "Miami University Regionals", source: 'miamiURegionals.jpeg' },
+    { id: 11, title: "Pike Family", source: 'pikeFamily.jpeg' },
+    { id: 11, title: "Primary Health Solutions", source: 'primaryHealth.jpeg' },
+    { id: 11, title: "thyssenkrupp Bilsten", source: 'thyssenkruppBilsten.jpeg' },
   ];
 
   const displayedBikeRacks = [];
@@ -68,7 +68,7 @@ const BikeRacks = (props) => {
         key={bikeRack.id}
         source={bikeRack.source}
         // size={listOfBikeRacks[bikeRack]}
-        title={bikeRack.title}
+       title={bikeRack.title}
       ></SingleSculpture>
     );
   }
