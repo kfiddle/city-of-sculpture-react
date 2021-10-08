@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 
 import SlidingBox from "../slidingBox/SlidingBox";
 
-import emailjs from "emailjs-com";
+// import emailjs from "emailjs-com";
 
 import styles from "./Contact.module.css";
 

@@ -38,7 +38,7 @@ function App() {
         mapOpen={GETTING_AROUND}
         bikeRacksOpen={BIKE_RACKS}
       />
-      {(SCULPTURES || ABOUT_US || ARTISTS) && <Sculptures />}
+      {(SCULPTURES || ABOUT_US || ARTISTS || CONTACT_US || HAMILTON) && <Sculptures />}
       {ABOUT_US && <AboutUs />}
       {BIKE_RACKS && <BikeRacks />}
       {GETTING_AROUND && <GettingAround />}
