@@ -8,9 +8,11 @@ import Artists from "./components/artists/Artists";
 import Sculptures from "./components/sculptures/Sculptures";
 import BikeRacks from "./components/bikeRacks/BikeRacks";
 import GettingAround from "./components/gettingAround/GettingAround";
+import GettingAround2 from "./components/gettingAround2/GettingAround2";
+
 import Contact from "./components/contact/Contact";
 import Hamilton from "./components/hamilton/Hamilton";
-import Footer from "./components/footer/Footer";
+// import Footer from "./components/footer/Footer";
 
 function App() {
   const [chosenOption, setChosenOption] = useState("The Sculptures");
@@ -19,6 +21,8 @@ function App() {
   const ARTISTS = chosenOption === "The Artists";
   const BIKE_RACKS = chosenOption === "Sculptural Bike Racks";
   const GETTING_AROUND = chosenOption === "Getting Around";
+  const GETTING_AROUND_2 = chosenOption === "Getting Around 2";
+
   const ABOUT_US = chosenOption === "About Us";
   const CONTACT_US = chosenOption === "Contact Us";
   const HAMILTON = chosenOption === "Hamilton";
@@ -42,6 +46,7 @@ function App() {
       {ABOUT_US && <AboutUs />}
       {BIKE_RACKS && <BikeRacks />}
       {GETTING_AROUND && <GettingAround />}
+      {GETTING_AROUND_2 && <GettingAround2 />}
       {CONTACT_US && <Contact />}
       {ARTISTS && <Artists />}
       {HAMILTON && <Hamilton />}
