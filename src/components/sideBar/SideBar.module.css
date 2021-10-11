@@ -9,11 +9,11 @@
   height: 100%;
   background: #c1272d;
   transition: 1.2s cubic-bezier(0.4, 0, 0.4, 1);
-  /* width: 23vw; */
+  width: 28vw;
   z-index: 2;
 }
 
 .menuContainer {
   margin-top: 25vh;
-  width: 100%;
+  /* width: 100%; */
 }

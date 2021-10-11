@@ -17,18 +17,22 @@ const ARTISTS = {
 };
 const GETTING_AROUND = {
   id: "4",
-  title: "Getting Around",
+  title: "Bridge & Main St. Walking Tour",
+};
+const GETTING_AROUND_2 = {
+  id: "5",
+  title: "Downtown Walking Tour",
 };
 const BIKE_RACKS = {
-  id: "5",
+  id: "6",
   title: "Sculptural Bike Racks",
 };
 const HAMILTON = {
-  id: "6",
+  id: "7",
   title: "Hamilton",
 };
 const CONTACT_US = {
-  id: "7",
+  id: "8",
   title: "Contact Us",
 };
 const menuItems = [
@@ -36,6 +40,7 @@ const menuItems = [
   SCULPTURES,
   ARTISTS,
   GETTING_AROUND,
+  GETTING_AROUND_2,
   BIKE_RACKS,
   HAMILTON,
   CONTACT_US,

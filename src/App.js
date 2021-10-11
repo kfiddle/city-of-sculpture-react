@@ -20,8 +20,8 @@ function App() {
   const SCULPTURES = chosenOption === "The Sculptures";
   const ARTISTS = chosenOption === "The Artists";
   const BIKE_RACKS = chosenOption === "Sculptural Bike Racks";
-  const GETTING_AROUND = chosenOption === "Getting Around";
-  const GETTING_AROUND_2 = chosenOption === "Getting Around 2";
+  const GETTING_AROUND = chosenOption === "Bridge & Main St. Walking Tour";
+  const GETTING_AROUND_2 = chosenOption === "Downtown Walking Tour";
 
   const ABOUT_US = chosenOption === "About Us";
   const CONTACT_US = chosenOption === "Contact Us";

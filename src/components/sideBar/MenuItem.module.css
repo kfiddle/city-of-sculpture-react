@@ -1,8 +1,9 @@
 .navItemDiv {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
   }
 
   .hovered {
@@ -16,7 +17,7 @@
     font-weight: 500;
     padding: 0 3rem;
     text-transform: uppercase;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     cursor: pointer;
 
   }
