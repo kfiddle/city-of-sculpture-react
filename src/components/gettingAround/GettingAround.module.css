@@ -6,9 +6,44 @@
     transition: 1s;
     filter: opacity(0) hue-rotate(180deg) saturate(30%) invert(20%);
   }
+
+  .mapImage{
+      z-index: -10;
+  }
   
   .open {
       transform: scale(1, 1);
       filter: opacity(1);
+  }
+
+  .innerContentContainer{
+    width: 25vw;
+    height: 50vh;
+    overflow: scroll;
+    overflow-x: hidden;  
+    padding:2rem;
+  }
+
+    .innerContentContainer::-webkit-scrollbar {
+      width: .5rem;
+  }
+  
+  .innerContentContainer::-webkit-scrollbar-track {
+      background: none;
+  }
+  
+  .innerContentContainer::-webkit-scrollbar-thumb {
+      background: #c1272d;
+      /* border-radius: .5rem; */
+  }
+  
+  .innerContentContainer::-webkit-scrollbar-thumb:hover {
+      background: #c1272d;
+  }
+  
+  .statementDiv {
+    font-weight: 300;
+    line-height: 1.6em;
+    letter-spacing: .0125rem;
   }
   
